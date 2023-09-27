@@ -1,0 +1,34 @@
+@import url(https://fonts.google.com/share?selection.family=Poppins:ital,wght@1,100;1,300);
+
+body {
+    background-image: url(imageland.jpg);
+    background-size: 100%;
+    width: 100px;
+    height:100px;
+    /*  background: #363642; */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

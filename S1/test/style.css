@@ -1,0 +1,27 @@
+.parents
+{
+    display: grid;
+    grid-template-columns: 200px 300px 150px;
+    grid-template-columns: 2fr 4fr 3fr;
+    columns: gap 40px;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+
+}
+
+@media  screen and (max-width:1200px){
+ .parents {
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (max-width:800px){
+.parents
+ { grid-template-columns: 100% ;
+    
+}
+}
+.child
+{
+    border: ;
+}

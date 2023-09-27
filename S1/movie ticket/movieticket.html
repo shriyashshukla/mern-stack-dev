@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking Movie Ticket</title>
+</head>
+
+<body background="movie-background-collage_23-2149876030.avif">
+    <h2>Booking Movie Ticket</h2>
+    <form action="/confirm_booking" method="post">
+        <label for="movieName">Movie Name:</label>
+        <input type="text" id="movieName" name="movieName" required><br><br>
+
+        <label for="firstName">Your Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+      
+
+        <label for="phoneNumber"> Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+        <label for="no.ofpersons">No. of persons</label>
+        <input type="tel" id="no.ofpersons" name="no.ofpersons" required><br> <br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Time for Movie:</label>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <label>Payment Mode:</label><br>
+        <input type="radio" id="online" name="paymentMode" value="online" required>
+        <label for="online">Online</label><br>
+        <input type="radio" id="offline" name="paymentMode" value="offline" required>
+        <label for="offline">Offline</label><br><br>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+</body>
+
+</html>
+
+

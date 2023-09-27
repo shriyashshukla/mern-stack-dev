@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpapers Website</title>
+    <style>
+        /* ... Your existing CSS rules ... */
+        body {
+            ;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .wallpapers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .wallpaper {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .wallpaper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+.wallpaper-info {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+}
+
+.wallpaper-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.wallpaper-info h2 {
+    margin-top: 10px;
+}
+
+.wallpaper-info p {
+    margin-top: 5px;
+}
+
+/* Adjust the appearance of the wallpapers and other elements as needed */
+
+
+
+    </style>
+
+<script>
+    function showWallpaperInfo(imageUrl, title, description) {
+        var wallpaperInfoImage = document.getElementById("wallpaper-info-image");
+        var wallpaperInfoTitle = document.getElementById("wallpaper-info-title");
+        var wallpaperInfoDescription = document.getElementById("wallpaper-info-description");
+
+        wallpaperInfoImage.src = imageUrl;
+        wallpaperInfoTitle.textContent = title;
+        wallpaperInfoDescription.textContent = description;
+
+        // Scroll to the top to see the wallpaper info
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+</head>
+<body>
+    <header>
+        <h1>Wallpapers Gallery</h1>
+    </header>
+    <main>
+        <div class="wallpapers">
+            <div class="wallpaper" onclick="showWallpaperInfo('wallpaper1.jpg', 'Wallpaper 1', 'Description for Wallpaper 1')">
+                <img src="https://c4.wallpaperflare.com/wallpaper/39/346/426/digital-art-men-city-futuristic-night-hd-wallpaper-thumb.jpg" alt="Wallpaper 1">
+            </div>
+            <div class="wallpaper" onclick="showWallpaperInfo('wallpaper2.jpg', 'Wallpaper 2', 'Description for Wallpaper 2')">
+                <img src="wallpaper2.jpg" alt="Wallpaper 2">
+            </div>
+            <!-- Add more wallpaper divs as needed -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Wallpapers Website</p>
+    </footer>
+
+    <div class="wallpaper-info">
+        <img id="wallpaper-info-image" src="" alt="">
+        <h2 id="wallpaper-info-title"></h2>
+        <p id="wallpaper-info-description"></p>
+    </div>
+
+    
+</body>
+</html>

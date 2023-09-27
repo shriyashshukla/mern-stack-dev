@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .logo-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .search-bar input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    background: #fff;
+    color: #333;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .login-signup {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-button,
+  .signup-button {
+    background: #fff;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  /* Styling on hover or focus (optional) */
+  .logo-button:hover,
+  .search-button:hover,
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #eee;
+  }
+  

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Awesome Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>// Wait for the DOM to be ready
+    $(document).ready(function() {
+      // Get the modal element
+      var modal = document.getElementById("myModal");
+    
+      // Get the image and its associated modal image
+      var img = document.getElementById("imageLink");
+      var modalImg = document.getElementById("modalImage");
+    
+      // When the user clicks on the image, open the modal
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      };
+    
+      // When the user clicks on the close button, close the modal
+      var closeBtn = document.getElementsByClassName("close")[0];
+      closeBtn.onclick = function() {
+        modal.style.display = "none";
+      };
+    
+      // When the user clicks outside the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    });
+    </script>
+    <style>
+        /* Existing styles */
+body {
+  /* Your existing styles */
+}
+
+/* Add styles for the modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+}
+
+.modal-content {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin: 5% auto;
+}
+
+.close {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+}
+
+/* Add a transition effect for the modal */
+.modal-content, .close {
+  transition: 0.3s;
+}
+
+/* Add a hover effect for the image link */
+/* #imageLink:hover { */
+  opacity: 0.8;
+  /* Add any other desired transition effect */
+  
+
+
+    </style>
+</head>
+<body>
+  <!-- Add a link to the image -->
+  <a href="#" id="imageLink">
+    <img src="imageland.jpg" alt="Image" />
+  </a>
+
+  <!-- The modal (popup) -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" src="">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

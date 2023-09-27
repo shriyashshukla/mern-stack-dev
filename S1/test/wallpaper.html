@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpapers Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            ;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .wallpapers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .wallpaper {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .wallpaper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Wallpapers Gallery</h1>
+    </header>
+    <main>
+        <div class="wallpapers">
+            <div class="wallpaper">
+                <img src="imageland.jpg" alt="Wallpaper 1">
+                <button onclick="downloadWallpaper('wallpaper1.jpg')">Download</button>
+
+            </div>
+            <div class="wallpaper">
+                <img src="imageme.jpg" alt="Wallpaper 2">
+            </div>
+            <div class="wallpaper">
+                <img src="https://c4.wallpaperflare.com/wallpaper/39/346/426/digital-art-men-city-futuristic-night-hd-wallpaper-thumb.jpg" alt="">
+            </div>
+            <div class="wallpaper">
+                <img src="imageland.jpg" alt="Wallpaper 2">
+            </div>
+            <div class="wallpaper">
+                <img src="imageland.jpg" alt="Wallpaper 2">
+            </div>
+            <div class="wallpaper">
+                <img src="imageland.jpg" alt="Wallpaper 2">
+            </div>
+            <div class="wallpaper">
+                <img src="wallpaper2.jpg" alt="Wallpaper 2">
+            </div>
+            <!-- Add more wallpaper divs as needed -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Wallpapers Website</p>
+    </footer>
+</body>
+
+</html>

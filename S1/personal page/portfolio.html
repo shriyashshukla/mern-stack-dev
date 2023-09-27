@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+        .project-1{
+            background-image: url('https://cdn.iconscout.com/wordpress/2022/11/Dribbble.png?f=webp&w=1440');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 250px;
+            height: 100%;
+            
+            /* background-attachment: fixed; */
+        }
+
+        .scroll-top{
+          position: fixed;
+          bottom: 50px;
+          right: 50px;
+        }
+
+        .overlay{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 0, 0, 0.5);
+          opacity: 0;
+          transition-duration: 700ms;
+        }
+
+        .overlay:hover{
+          opacity: 1;
+        }
+    </style>
+  </head>
+  <body>
+
+    <button class="scroll-top btn btn-primary btn-pill"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> </button>
+
+    <header class="bg-dark">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <img
+              class="w-100"
+              src="z.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-md-8 text-white p-5">
+            <h2>Hello, My Name is</h2>
+            <p class="display-2 fw-bold">Shriyash shukla</p>
+            <h1 class="fw-bold">I'm a Full Stack Developer</h1>
+
+            <div class="row align-items-center">
+              <div class="col-md-3 mt-4">
+                <button class="btn btn-warning rounded-pill w-100">
+                  Hire Me!
+                </button>
+              </div>
+              <div class="col-md-4 mt-4">
+                <div class="text-center">
+                  <i class="fa-brands fa-linkedin fa-2x"></i>&nbsp;&nbsp;
+                  <i class="fa-brands fa-github fa-2x"></i>&nbsp;&nbsp;
+                  <i class="fa-brands fa-facebook fa-2x"></i>&nbsp;&nbsp;
+                  <i class="fa-brands fa-twitter fa-2x"></i>&nbsp;&nbsp;
+                  <i class="fa-brands fa-instagram fa-2x"></i>&nbsp;&nbsp;
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-5">
+      <h1 class="text-center">My Skills</h1>
+
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-2 col-6 mb-4">
+            <div class="card shadow">
+              <div class="overlay">
+                <h3 class="text-white text-center">Overlay text</h3>
+              </div>
+              <div class="card-body">
+                <img class="w-50 d-block m-auto" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
+                <h3 class="text-center">HTML 5</h3>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <img class="w-50 d-block m-auto" src="https://www.pngkey.com/png/detail/624-6241203_css-icon-png-cascading-style-sheets.png" alt="">
+                <h3 class="text-center">CSS 3</h3>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <img class="w-50 d-block m-auto" src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="">
+                <h3 class="text-center">Node JS</h3>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <img class="w-50 d-block m-auto" src="https://cdn1.iconfinder.com/data/icons/soleicons-solid-vol-1/64/reactjs_javascript_library_atom_atomic_react-512.png" alt="">
+                <h3 class="text-center">REACT JS</h3>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <img class="w-50 d-block m-auto" src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" alt="">
+                <h3 class="text-center">Express JS</h3>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <img class="w-50 d-block m-auto" src="https://www.svgrepo.com/download/331488/mongodb.svg" alt="">
+                <h3 class="text-center">MongoDB</h3>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-5 project-section">
+        <h1 class="text-center">My Projects</h1>
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="project-1">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h1>Project Name</h1>
+                        <div class="d-flex align-items-center" style="column-gap: 10px;">
+                          <div>
+                              <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                          </div>
+                          <div>
+                              <h4 class="m-0">Mubassir</h4>
+                              <p class="m-0">Jul 25</p>
+                          </div>
+                      </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, neque?</p>
+                        <ul>
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="btn btn-primary rounded-pill mt-5">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 project-section">
+        <h1 class="text-center">My Projects</h1>
+
+        <div class="container">
+            <div class="row mt-5 flex-row-reverse">
+                <div class="col-md-6">
+                    <div class="project-1">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h1>Project Name</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, neque?</p>
+                        <ul>
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="btn btn-primary rounded-pill mt-5">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 project-section">
+        <h1 class="text-center">My Projects</h1>
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="project-1">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h1>Project Name</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, neque?</p>
+                        <ul>
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="btn btn-primary rounded-pill mt-5">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 project-section">
+        <h1 class="text-center">My Projects</h1>
+
+        <div class="container">
+            <div class="row mt-5 flex-row-reverse">
+                <div class="col-md-6">
+                    <div class="project-1">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h1>Project Name</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, neque?</p>
+                        <ul>
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="btn btn-primary rounded-pill mt-5">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 project-section">
+        <h1 class="text-center">My Projects</h1>
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="project-1">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h1>Project Name</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, neque?</p>
+                        <ul>
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="btn btn-primary rounded-pill mt-5">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 project-section">
+        <h1 class="text-center">My Projects</h1>
+
+        <div class="container">
+            <div class="row mt-5 flex-row-reverse">
+                <div class="col-md-6">
+                    <div class="project-1">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h1>Project Name</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, neque?</p>
+                        <ul>
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="btn btn-primary rounded-pill mt-5">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+
+        ScrollReveal().reveal('.card', {
+            delay: 200,
+            origin: 'bottom',
+            distance: '200px',
+            duration: 1000,
+            interval: 100,
+            scale: 0.6,
+        });
+        
+        ScrollReveal().reveal('.project-section:nth-child(odd)', {
+            delay: 200,
+            origin: 'left',
+            distance: '200px',
+            duration: 1000,
+            interval: 100,
+            // reset: true
+            // scale: 0.7,
+        });
+       
+        ScrollReveal().reveal('.project-section:nth-child(even)', {
+            delay: 200,
+            origin: 'right',
+            distance: '200px',
+            duration: 1000,
+            interval: 100,
+            // reset: true
+            // scale: 0.7,
+        });
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // VanillaTilt.init(document.querySelectorAll('.card'), {
+        //     max: 25,
+        //     speed : 100
+        // });
+        
+        VanillaTilt.init(document.querySelectorAll('.project-1'), {
+            max: 10,
+            speed : 100
+        });
+    </script>
+
+
+
+  </body>
+</html>
