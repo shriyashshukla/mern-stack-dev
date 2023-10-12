@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import mylogo from "../logo.svg";
 
 const Home = () => {
-  let name = "Mubassir";
+  let name = "Shriyash shukla";
 
   let num1 = 40;
   let num2 = 60;
